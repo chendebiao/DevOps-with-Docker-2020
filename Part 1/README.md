@@ -211,7 +211,7 @@ On the http://localhost:5000/ webpage:
 **Part 1  
 Exercise 1.10: Congratulations! You configured your ports correctly!**
 
-![1_10_result](\1_12\1_12_result.jpg)
+![1_10_result](https://github.com/chendebiao/DevOps-with-Docker-2020/blob/main/Part%201/1_12/1_12_result.jpg)
 
 ## 1.11 Answer
 ```
@@ -261,7 +261,7 @@ cca62e13186f21bd3d7da7210a8848f552ec98e3474ec864113b96a416679ee8
 On the http://localhost:5000/ webpage:  
 **Exercise 1.12: Working!**
 
-![1_12_result](\1_12\1_12_result.jpg)
+![1_12_result](https://github.com/chendebiao/DevOps-with-Docker-2020/blob/main/Part%201/1_12/1_12_result.jpg)
 
 ## 1.13 Answer
 ```
@@ -279,7 +279,7 @@ cheng@linux:~/1_13$ docker run -d -p 8080:8080 javaspring
 On the http://localhost:8080/ webpage:  
 **Success**
 
-![1_13_result](\1_13\1_13_result.jpg)
+![1_13_result](https://github.com/chendebiao/DevOps-with-Docker-2020/blob/main/Part%201/1_13/1_13_result.jpg)
 ## 1.14 Answer
 ```
 cheng@linux:~/1_14$ docker build -t rails .
@@ -298,7 +298,7 @@ Total presses: 1
 Press was successfully created.  
 List presses**
 
-![1_14_result](\1_14\1_14_result.jpg)
+![1_14_result](https://github.com/chendebiao/DevOps-with-Docker-2020/blob/main/Part%201/1_14/1_14_result.jpg)
 ## 1.15 Answer
 
 I write a simple Docker.
