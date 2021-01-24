@@ -164,21 +164,120 @@ Secret message is:
 
 ## 1.9 Answer
 ```
-cheng@linux:~$ docker run -d -p 1234:80 devopsdockeruh/ports_exercise
-c4a6e2711b1f6298f694cd6bad68076dd2be7cc30fd8d30f3a26eeb3f6235a47
-
-cheng@linux:~$ docker container port c4a6
-80/tcp -> 0.0.0.0:1234
-
-cheng@linux:~$ curl http://localhost:1234/
+cheng@linux:~$ docker run -d -p 80:80 devopsdockeruh/ports_exercise
+c18c6f738572f350f25e150fb59442a5e821cdca258487720bbcff601f2f23eb
+```
+```
+cheng@linux:~$ docker container port c18c
+80/tcp -> 0.0.0.0:80
+```
+```
+cheng@linux:~$ curl http://localhost:80
 Ports configured correctly!!
 ```
 
 ## 1.10 Answer
+```
+cheng@linux:~/1_10$ docker build -t webexample .
+Sending build context to Docker daemon  2.048kB
+...
+Successfully built 25344abd7dc4
+Successfully tagged webexample:latest
+```
+```
+cheng@linux:~/1_10$ docker run -d -p 5000:5000 webexample
+34a730d76b8d773a3a7180e38f1dd2f7b98e41783b3603f499730e309a3a6a34
+```
+```
+cheng@linux:~/1_10$ curl http://localhost:5000/
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <title>Webpack App</title>
+    <link href="vendors~main-1.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <script src="vendors~main.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
+```
+On the http://localhost:5000/ webpage:  
+**Part 1  
+Exercise 1.10: Congratulations! You configured your ports correctly!**
+
 ## 1.11 Answer
+```
+cheng@linux:~/1_11$ docker build -t webserver .
+Sending build context to Docker daemon  3.072kB
+...
+Successfully built 64e927d375a8
+Successfully tagged webserver:latest
+```
+```
+cheng@linux:~/1_11$ docker run -d -v $(pwd)/logs.txt:/logs.txt -p 8000:8000 webserver
+57deccde07587f9519ce0932f3cb222751bb363bbabcce85f34ca422312e79f9
+```
+```
+cheng@linux:~/1_11$ curl http://localhost:8000
+Port configured correctly, generated message in logs.txt
+```
+
+In log.txt:
+```
+1/23/2021, 3:04:48 PM: Connection received in root
+1/23/2021, 3:04:49 PM: Connection received in root
+1/23/2021, 3:04:50 PM: Connection received in root
+1/23/2021, 3:04:50 PM: Connection received in root
+```
 ## 1.12 Answer
+```
+cheng@linux:~/1_12$ docker build -f Dockerfile_front -t front .
+Sending build context to Docker daemon  3.584kB
+...
+Successfully built 69680903c498
+Successfully tagged front:latest
+
+cheng@linux:~/1_12$ docker build -f Dockerfile_back  -t back .
+Sending build context to Docker daemon  3.584kB
+...
+Successfully built 631f9e7a96f5
+Successfully tagged back:latest
+```
+```
+cheng@linux:~/1_12$ docker run -d -p 5000:5000 front
+d9a2f1d35a1b01e44f03ad786bc734557eab7631d37a52c9e81888eae004a7ca
+
+cheng@linux:~/1_12$ docker run -d -p 8000:8000 back
+cca62e13186f21bd3d7da7210a8848f552ec98e3474ec864113b96a416679ee8
+```
+On the http://localhost:5000/ webpage:  
+**Exercise 1.12: Working!**
+
 ## 1.13 Answer
+```
+cheng@linux:~/1_13$ docker build -t javaspring .
+Sending build context to Docker daemon  2.048kB
+...
+Successfully built 2071245b6a41
+Successfully tagged javaspring:latest
+```
+
+```
+cheng@linux:~/1_13$ docker run -d -p 8080:8080 javaspring
+668992f31d712a340dba6c86b722bca720466189d9dcf88d4cf257f58c3eea7c
+```
+On the http://localhost:8080/ webpage:  
+**Success**
+
+![avatar](/1_13/1_13_result.jpg)
 ## 1.14 Answer
+
 ## 1.15 Answer
 ## 1.16 Answer
 ## 1.17 Answer
