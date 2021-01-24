@@ -211,6 +211,8 @@ On the http://localhost:5000/ webpage:
 **Part 1  
 Exercise 1.10: Congratulations! You configured your ports correctly!**
 
+![1_10_result](\1_12\1_12_result.jpg)
+
 ## 1.11 Answer
 ```
 cheng@linux:~/1_11$ docker build -t webserver .
@@ -259,6 +261,8 @@ cca62e13186f21bd3d7da7210a8848f552ec98e3474ec864113b96a416679ee8
 On the http://localhost:5000/ webpage:  
 **Exercise 1.12: Working!**
 
+![1_12_result](\1_12\1_12_result.jpg)
+
 ## 1.13 Answer
 ```
 cheng@linux:~/1_13$ docker build -t javaspring .
@@ -275,10 +279,56 @@ cheng@linux:~/1_13$ docker run -d -p 8080:8080 javaspring
 On the http://localhost:8080/ webpage:  
 **Success**
 
-![avatar](/1_13/1_13_result.jpg)
+![1_13_result](\1_13\1_13_result.jpg)
 ## 1.14 Answer
+```
+cheng@linux:~/1_14$ docker build -t rails .
+Sending build context to Docker daemon  2.048kB
+...
+Successfully built c9f34f2fbad4
+Successfully tagged rails:latest
+```
+```
+cheng@linux:~/1_14$ docker run -d -p 3000:3000 rails
+7c6b5e7f2b5dfc8f00032916bf68b3d40380ceaf15241776b3195500a8120aee
+```
+On the http://localhost:3000/ webpage:  
+**New Press  
+Total presses: 1  
+Press was successfully created.  
+List presses**
 
+![1_14_result](\1_14\1_14_result.jpg)
 ## 1.15 Answer
+
+I write a simple Docker.
+It will get a static html website from my project on github, then map it to the container's local port.
+### The Docekr link:
+https://hub.docker.com/repository/docker/chendebiao/my_first_docker
+### The github project link:
+https://github.com/chendebiao/Folium_Map_Visualization
+
+Can be run with following code:
+```
+docker run -d -p 1234:80 chendebiao/my_first_docker:v1.0
+```
+Result:
+![1_15_result](\1_15\1_15_result.jpg)
+
 ## 1.16 Answer
+```
+cheng@linux:~/1_16$ heroku login
+cheng@linux:~/1_16$ heroku container:login
+
+cheng@linux:~/1_16$ docker tag devopsdockeruh/heroku-example:latest registry.heroku.com/chendebiao-docker-1-16/web
+
+cheng@linux:~/1_16$ docker push registry.heroku.com/chendebiao-docker-1-16/web
+
+cheng@linux:~/1_16$ heroku container:release -a chendebiao-docker-1-16 web
+```
+
+### **The url in which the released application is**
+https://chendebiao-docker-1-16.herokuapp.com/
 ## 1.17 Answer
+Skipped.
 
