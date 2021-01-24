@@ -313,7 +313,7 @@ Can be run with following code:
 docker run -d -p 1234:80 chendebiao/my_first_docker:v1.0
 ```
 Result:
-![1_15_result](/1_15/1_15_result.jpg)
+![1_15_result](https://github.com/chendebiao/DevOps-with-Docker-2020/blob/main/Part%201/1_15/1_15_result.jpg)
 
 ## 1.16 Answer
 ```
