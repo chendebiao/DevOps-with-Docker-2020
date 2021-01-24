@@ -313,7 +313,7 @@ Can be run with following code:
 docker run -d -p 1234:80 chendebiao/my_first_docker:v1.0
 ```
 Result:
-![1_15_result](\1_15\1_15_result.jpg)
+![1_15_result](/1_15/1_15_result.jpg)
 
 ## 1.16 Answer
 ```
