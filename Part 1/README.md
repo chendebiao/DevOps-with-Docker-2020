@@ -69,6 +69,10 @@ Searching..
 
 ```
 ## 1.6 Answer
+### Dockerfile  
+[Exercise 1.6 Dockerfile](https://github.com/chendebiao/DevOps-with-Docker-2020/blob/main/Part%201/1_6/Dockerfile)
+
+### Command  
 ```
 cheng@linux:~/1_6$ docker build -t docker-clock .
 Sending build context to Docker daemon  2.048kB
