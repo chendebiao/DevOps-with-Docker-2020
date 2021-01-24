@@ -1,7 +1,6 @@
 # Part 1 Answer
 ## 1.1 Answer
-### Commands
-the output for `docker container ls -a`:
+### The output for `docker container ls -a`
 ```
 cheng@linux:~$ docker container ls -a
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                     PORTS     NAMES
@@ -10,15 +9,15 @@ c09c81f94a66   nginx     "/docker-entrypoint.…"   32 seconds ago   Up 31 secon
 185af2c1a43c   nginx     "/docker-entrypoint.…"   35 seconds ago   Exited (0) 7 seconds ago             distracted_lumiere
 ```
 ## 1.2 Answer
+### The output for `docker container ls -a` and `docker image ls`
 ```
 cheng@linux:~$ docker container ls -as
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
 cheng@linux:~$ docker image ls
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
-cheng@linux:~$ 
-
 ```
 ## 1.3 Answer
+### Commands
 ```
 cheng@linux:~$ docker container run -it devopsdockeruh/pull_exercise
 Unable to find image 'devopsdockeruh/pull_exercise:latest' locally
@@ -75,7 +74,7 @@ Searching..
 ### Dockerfile  
 [Exercise 1.6 Dockerfile](https://github.com/chendebiao/DevOps-with-Docker-2020/blob/main/Part%201/1_6/Dockerfile)
 
-### Command  
+### Commands  
 ```
 cheng@linux:~/1_6$ docker build -t docker-clock .
 Sending build context to Docker daemon  2.048kB
@@ -103,7 +102,9 @@ cheng@linux:~/1_6$ docker container run docker-clock
 ```
 
 ## 1.7 Answer
-Dockerfile and script file on my local machine are in the folder ['1_7']()
+### Dockerfile  
+[Exercise 1.7 Dockerfile](https://github.com/chendebiao/DevOps-with-Docker-2020/tree/main/Part%201/1_7)
+### Commands  
 ```
 cheng@linux:~/1_7$ docker build -t curler .
 Sending build context to Docker daemon  3.072kB
@@ -184,6 +185,10 @@ Ports configured correctly!!
 ```
 
 ## 1.10 Answer
+### Dockerfile  
+[Exercise 1.10 Dockerfile](https://github.com/chendebiao/DevOps-with-Docker-2020/blob/main/Part%201/1_10/Dockerfile)
+
+### Commands  
 ```
 cheng@linux:~/1_10$ docker build -t webexample .
 Sending build context to Docker daemon  2.048kB
@@ -221,6 +226,9 @@ Exercise 1.10: Congratulations! You configured your ports correctly!**
 ![1_10_result](https://github.com/chendebiao/DevOps-with-Docker-2020/blob/main/Part%201/1_12/1_12_result.jpg)
 
 ## 1.11 Answer
+### Dockerfile  
+[Exercise 1.11 Dockerfile](https://github.com/chendebiao/DevOps-with-Docker-2020/blob/main/Part%201/1_11/Dockerfile)
+### Commands 
 ```
 cheng@linux:~/1_11$ docker build -t webserver .
 Sending build context to Docker daemon  3.072kB
@@ -245,6 +253,9 @@ In log.txt:
 1/23/2021, 3:04:50 PM: Connection received in root
 ```
 ## 1.12 Answer
+### Dockerfile  
+[Exercise 1.12 Dockerfile](https://github.com/chendebiao/DevOps-with-Docker-2020/tree/main/Part%201/1_12)
+### Commands 
 ```
 cheng@linux:~/1_12$ docker build -f Dockerfile_front -t front .
 Sending build context to Docker daemon  3.584kB
