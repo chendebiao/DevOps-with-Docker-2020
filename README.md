@@ -6,7 +6,7 @@ Due to time constraints, I only completed Part 1 exercises, hoping to get 1 cred
 I'll be back. 🤙
 
 ## Part 1
-👉  https://github.com/chendebiao/DevOps-with-Docker-2020/tree/main/Part%201
+👉  [Part 1 Answer](https://github.com/chendebiao/DevOps-with-Docker-2020/tree/main/Part%201)
 
 Cost about 12 hours.
 
