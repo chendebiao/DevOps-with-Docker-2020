@@ -303,7 +303,7 @@ List presses**
 
 I write a simple Docker.
 It will get a static html website from my project on github, then map it to the container's local port.
-### The Docekr link:
+### The docker link:
 https://hub.docker.com/repository/docker/chendebiao/my_first_docker
 ### The github project link:
 https://github.com/chendebiao/Folium_Map_Visualization
