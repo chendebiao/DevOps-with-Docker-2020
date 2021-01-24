@@ -1,5 +1,7 @@
 # Part 1 Answer
 ## 1.1 Answer
+### Commands
+the output for `docker container ls -a`:
 ```
 cheng@linux:~$ docker container ls -a
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                     PORTS     NAMES
@@ -7,7 +9,6 @@ c09c81f94a66   nginx     "/docker-entrypoint.…"   32 seconds ago   Up 31 secon
 0fc8493f9f08   nginx     "/docker-entrypoint.…"   34 seconds ago   Exited (0) 7 seconds ago             fervent_snyder
 185af2c1a43c   nginx     "/docker-entrypoint.…"   35 seconds ago   Exited (0) 7 seconds ago             distracted_lumiere
 ```
-
 ## 1.2 Answer
 ```
 cheng@linux:~$ docker container ls -as
@@ -17,7 +18,6 @@ REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
 cheng@linux:~$ 
 
 ```
-
 ## 1.3 Answer
 ```
 cheng@linux:~$ docker container run -it devopsdockeruh/pull_exercise
@@ -34,10 +34,12 @@ Give me the password: basics
 You found the correct password. Secret message is:
 "This is the secret message"
 ```
+### Secret message  
 **Password: basics**  
 **Secret message is: "This is the secret message"**
 
 ## 1.4 Answer
+### Commands
 ```
 cheng@linux:~$ docker container exec -it quizzical_meitner bash
 root@c0939e3ab049:/usr/app# tail -f ./logs.txt
@@ -50,6 +52,7 @@ Secret message is:
 "Docker is easy"
 Sat, 23 Jan 2021 11:08:55 GMT
 ```
+### Secret message
 **Secret message is: "Docker is easy"**
 
 ## 1.5 Answer
